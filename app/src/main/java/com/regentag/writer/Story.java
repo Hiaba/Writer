@@ -16,7 +16,7 @@ public class Story {
     public Story()
     {   }
 
-    public Story(int id, String inhalt, String titel, int wordcount) {
+    public Story(int id, String titel, String inhalt, int wordcount) {
         this.id = id;
         this.wordcount = wordcount;
         this.inhalt = inhalt;

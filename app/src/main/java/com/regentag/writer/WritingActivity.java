@@ -6,9 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import java.util.List;
 
 public class WritingActivity extends AppCompatActivity {
 
@@ -23,7 +26,25 @@ public class WritingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_writing);
         init();
-    }
+
+
+           /* DBHandler db = new DBHandler(this);
+
+        // Inserting Stories/Rows
+            Log.d("Insert: ", "Inserting ..");
+            db.addStory(new Story(1, "neu1", "",0));
+            db.addStory(new Story(2, "neu2", "",0));
+
+        // Reading all stories
+            Log.d("Reading: ", "Reading all shops..");
+            List<Story> stories = db.getAllStories();
+
+            for (Story story : stories) {
+                String log = "Id: " + story.getId() + " ,Titel: " + story.getTitel() + ", Inhalt: "+story.getInhalt() + ", wordcount: "+story.getWordcount();
+        // Writing stories to log
+                Log.d("Story: : ", log);
+            }*/
+        }
 
     private void init() {
         userInput = (EditText) findViewById(R.id.userInput);
